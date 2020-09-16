@@ -1,0 +1,29 @@
+/* Variables */
+
+  :root {
+      --basic-white: #ffffff;
+      --basic-black: #000000;
+      --basic-red: #ff0000;
+      --basic-green: #008000;
+      --basic-yellow: #ffff00;
+      --basic-backgound-grey: #eeeeee;
+      --basic-light-grey: #888888; 
+  }
+
+  /* Global */
+
+  body {
+     font-family: "Roboto", Arial, sans-serif;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 24px;
+     color: var(--basic-black);
+     background-color: var(--basic-light-grey);
+     
+  }
+
+  header {
+      background-image: url(nerds-index-slide1.png); 
+      background-color: #eeeeee;
+  }
