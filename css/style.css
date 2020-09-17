@@ -5,25 +5,163 @@
       --basic-black: #000000;
       --basic-red: #ff0000;
       --basic-green: #008000;
-      --basic-yellow: #ffff00;
+      --basic-yellow: #efc849;
       --basic-backgound-grey: #eeeeee;
-      --basic-light-grey: #888888; 
+      --basic-light-grey: #666666; 
   }
 
   /* Global */
 
   body {
      font-family: "Roboto", Arial, sans-serif;
-     font-style: normal;
-     font-weight: normal;
      font-size: 16px;
      line-height: 24px;
      color: var(--basic-black);
-     background-color: var(--basic-light-grey);
-     
+     background-color: var(--basic-white);  
   }
 
-  header {
-      background-image: url(nerds-index-slide1.png); 
-      background-color: #eeeeee;
+  ul {
+    list-style-type: none;
   }
+
+.main-header-logo {
+    color: var(--basic-black);
+}
+  .main-header {
+      background-color: var(--basic-backgound-grey);   
+  }
+
+  .main-header-nav a, .basket-link{
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    text-decoration: none;
+    color: var(--basic-black);
+  }
+
+  .advantages-title {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 55px;
+    line-height: 55px;
+  }
+
+  .advantages-text {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .advantages-button {
+      background-color: var(--basic-red);
+      color: var(--basic-white);
+      font-size: 16px;
+      line-height: 18px;
+      border-radius: 3px;
+      text-decoration: none;
+  }
+
+  .items {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--basic-black);
+  }
+
+  .red-button {
+     background-color: var(--basic-red);
+     border-radius: 3px;
+     color: var(--basic-white); 
+     text-decoration: none;
+  }
+
+  .green-button {
+    background-color: var(--basic-green);
+    border-radius: 3px;
+    color: var(--basic-white); 
+    text-decoration: none;
+  }
+
+  .yellow-button {
+    background-color: var(--basic-yellow);
+    border-radius: 3px;
+    color: var(--basic-white); 
+    text-decoration: none;
+  }
+
+  .description-text {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px; 
+  }
+
+  .description-list {
+    font-size: 16px;
+    line-height: 24px; 
+  }
+
+  .features-slogan {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  .features-list-percent {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 64px;
+    color: var(--basic-black);  
+    
+  }
+
+.features-list-description {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.hidden-title {
+  opacity: 1;
+}
+hr {
+    color: var(--basic-light-grey);
+    opacity: 0.5;
+}
+.name {
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-decoration: none;
+}
+.adress {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-light-grey);
+}
+
+.tel {
+    text-decoration: none;
+    color: var(--basic-light-grey);
+    font-size: 16px;
+    line-height: 18px;
+
+}
+
+.social-button {
+    text-decoration: none;
+    color: var(--basic-black);
+    background-color: var(--basic-backgound-grey);
+    border-radius: 50px;
+    fill: var(--basic-white);
+}
+
+.social-slogan {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.social-promo {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--basic-light-grey);
+}
