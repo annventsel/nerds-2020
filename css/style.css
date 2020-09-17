@@ -20,33 +20,38 @@
      background-color: var(--basic-white);  
   }
 
-  ul {
-    list-style-type: none;
-  }
-
 .main-header-logo {
     color: var(--basic-black);
+    text-decoration: none;
 }
   .main-header {
       background-color: var(--basic-backgound-grey);   
   }
 
-  .main-header-nav a, .basket-link{
-    font-family: "Roboto", Arial, sans-serif;
+  .main-header-nav a, .basket-link {
     font-size: 16px;
     line-height: 30px;
     text-decoration: none;
     color: var(--basic-black);
+    list-style-type: none;
   }
 
+  .main-header-nav {
+    list-style-type: none;
+    text-transform: uppercase;
+  }
+
+  .user-navigation{
+    list-style-type: none;
+    text-transform: uppercase;
+
+  }
   .advantages-title {
-    font-family: "Roboto", Arial, sans-serif;
     font-size: 55px;
     line-height: 55px;
   }
 
   .advantages-text {
-    font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
   }
@@ -60,11 +65,24 @@
       text-decoration: none;
   }
 
+  .slider-list ul {
+    list-style-type: none;
+  }
   .items {
-    font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: var(--basic-black);
+  }
+
+  .items-list {
+    list-style-type: none;
+  }
+
+  .items-web {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .red-button {
@@ -72,6 +90,7 @@
      border-radius: 3px;
      color: var(--basic-white); 
      text-decoration: none;
+     text-transform: uppercase;
   }
 
   .green-button {
@@ -89,9 +108,19 @@
   }
 
   .description-text {
-    font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px; 
+  }
+.description-title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+  .description-offer {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .description-list {
@@ -105,13 +134,14 @@
     line-height: 24px;
     text-transform: uppercase;
   }
-
+.features-list {
+  list-style-type: none; 
+}
   .features-list-percent {
     font-weight: bold;
     font-size: 45px;
     line-height: 64px;
-    color: var(--basic-black);  
-    
+    color: var(--basic-black); 
   }
 
 .features-list-description {
@@ -119,33 +149,36 @@
     line-height: 18px;
 }
 
-.hidden-title {
+.clients {
+  list-style-type: none;
+}
+.visually-hidden {
   opacity: 1;
 }
-hr {
-    color: var(--basic-light-grey);
-    opacity: 0.5;
-}
-.name {
+
+.info-content-name {
   font-size: 18px;
   line-height: 30px;
   color: var(--basic-black);
   text-decoration: none;
 }
-.adress {
+.info-content-adress {
     font-size: 16px;
     line-height: 18px;
     color: var(--basic-light-grey);
+    font-style: normal;
 }
 
-.tel {
+.info-content-phone {
     text-decoration: none;
     color: var(--basic-light-grey);
     font-size: 16px;
     line-height: 18px;
-
 }
 
+.footer-social ul {
+  list-style-type: none;
+}
 .social-button {
     text-decoration: none;
     color: var(--basic-black);
