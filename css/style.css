@@ -28,7 +28,7 @@
       background-color: var(--basic-backgound-grey);   
   }
 
-  .main-header-nav a, .basket-link {
+  .main-header-nav a, .cart-link {
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
@@ -36,7 +36,9 @@
     color: var(--basic-black);
     list-style-type: none;
   }
-
+  .cart-link {
+    background: url(../img/cart-icon.svg);
+  }
   .main-header-nav {
     list-style-type: none;
     text-transform: uppercase;
@@ -105,6 +107,7 @@
     border-radius: 3px;
     color: var(--basic-white); 
     text-decoration: none;
+    text-transform: uppercase;
     font-weight: 500;
   }
 
@@ -113,6 +116,7 @@
     border-radius: 3px;
     color: var(--basic-white); 
     text-decoration: none;
+    text-transform: uppercase;
     font-weight: 500;
   }
 
@@ -146,7 +150,7 @@
 .features-list {
   list-style-type: none; 
 }
-  .features-list-percent {
+.features-list-percent {
     font-weight: bold;
     font-size: 45px;
     line-height: 64px;
