@@ -13,7 +13,7 @@
 <body class="page-body">
 
     <header class="main-header">
-        <nav class="main-navigation">
+        <nav class="main-navigation container">
             <a href="index.html" class="main-header-logo">
                 <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
             </a>
@@ -106,6 +106,7 @@
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                     <div class="sort">
                         <legend>Сортировать:</legend>
+                     <div class="catalog-sort-type">
                         <ul>
                             <li class="catalog-sort-list">
                                 <input class="visually-hidden sort-input-radio sort-input" type="radio" name="sort" value="price" id="sort-price" checked>
@@ -120,8 +121,8 @@
                                 <label for="sort-price">По названию:</label>
                             </li>
                         </ul>
-                        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                            <ul>
+                        <!-- <form class="filter" method="get" action="https://echo.htmlacademy.ru"> -->
+                            <ul class="catalog-pointers">
                                 <li class="pointers">
                                     <input class="visually-hidden sort-input-pointers" type="radio" name="pointer" value="down" id="sort-pointer-down" checked>
                                     <button class="pointer-down">
@@ -131,11 +132,12 @@
                                 <li class="pointers">
                                     <input class="visually-hidden sort-input-pointers" type="radio" name="pointer" value="up" id="sort-pointer-up" checked>
                                     <button class="pointer-up">
-                                        <img src="img/shape(2).svg" alt="Кнопка сортировки по возрастанию">
+                                        <img src="img/icon-up-dir.svg" alt="Кнопка сортировки по возрастанию">
                                     </button>
                                 </li>
                             </ul>
-                        </form>
+                        <!-- </form> -->
+                     </div>
                     </div>
                 </form>
                 <ul class="catalog-list">
@@ -199,6 +201,7 @@
                             <a class="catalog-button" href="#">9 900 руб.</a>
                         </div>
                     </li>
+                    
                 </ul>
                 <ul class="pagination-list">
                     <li class="pagination-item"><a href="#">1</a></li>
@@ -213,20 +216,20 @@
     <footer class="main-footer">
 
         <section class="map">
-          <h2 class="visually-hidden">Карта</h2>
-          <div class="container map-container">
-            <div class="info-content">
-              <strong class="info-content-name">NERDS DESIGN STUDIO</strong>
-              <address class="info-content-adress">
-                191186, Санкт-Петербург,
-                ул. Б. Конюшенная, д. 19/8
-              </address>
-              <a class="info-content-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-              <a class="info-content-link" href="#">Напишите нам</a>
-            </div>
-          </div>  
-          <img class="img-map" src="img/group-12.png" width="1440" height="416" alt="Карта проезда">
-        </section>
+            <h2 class="visually-hidden">Карта</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300312!2d30.32085871610069!3d59.93871916905415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1603292362389!5m2!1sru!2sua" width="600" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <!-- <img class="img-map" src="img/group-12.png" width="1440" height="416" alt="Карта проезда"> -->
+              <div class="info-content">
+                <strong class="info-content-name">NERDS DESIGN STUDIO</strong>
+                <address class="info-content-adress">
+                  191186, Санкт-Петербург,    
+                  ул.&nbspБ. Конюшенная, д. 19/8
+                </address>
+                <a class="info-content-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+                <a class="info-content-link" href="#">Напишите нам</a>
+              </div>
+          </section>
+          
         <div class="footer-social container">
             <ul class="footer-social-button">
               <li>
