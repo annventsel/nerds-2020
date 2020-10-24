@@ -298,6 +298,7 @@
     font-size: 16px;
     line-height: 24px;
     color: var(--basic-black);
+    margin-top: 80px;
   }
 
   .items-list {
@@ -326,75 +327,9 @@
   }
 
   .items-button {
-   /* background-color: var(--basic-red);
-    border-radius: 3px;
-    color: var(--basic-white); 
-    font-weight: 500;
-    text-decoration: none;
-    text-transform: uppercase;
-    width: 160px;
-    height: 50px;*/
     padding: 17px 40px 15px;
     margin-top: 32px;
     margin-bottom: 80px;
-  }
-
-  /*.red-button:hover {
-    background-color: var(--special-red-hover);
-  }
-
-  .red-button:active {
-    background-color: var(--special-red-active);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-    color: rgba(255,255,255,.3);
-  }
-
-  .green-button {
-    background-color: var(--basic-green);
-    border-radius: 3px;
-    color: var(--basic-white); 
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 500;
-    width: 160px;
-    height: 50px;
-    padding: 17px 40px 15px;
-    margin-top: 32px;
-    margin-bottom: 95px;
-  }
-
-  .green-button:hover {
-    background-color: var(--special-green-hover);
-  }
-
-  .green-button:active {
-    background-color: var(--special-green-active);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-    color: rgba(255,255,255,.3);
-  }
-
-  .yellow-button {
-    background-color: var(--basic-yellow);
-    border-radius: 3px;
-    color: var(--basic-white); 
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 500;
-    width: 160px;
-    height: 50px;
-    padding: 17px 40px 15px;
-    margin-top: 32px;
-    margin-bottom: 95px;
-  }
-
-  .yellow-button:hover {
-    background-color: var(--special-yellow-hover);
-  }
-
-  .yellow-button:active {
-    background-color: var(--special-yellow-active);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-    color: rgba(255,255,255,.3);
   }
 
   /* Wrapper Grid */
@@ -402,7 +337,10 @@
   .wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    /*padding-left: 140px;*/
+  }
+
+  .description {
+    border-top: 2px solid var(--basic-backgound-grey);
   }
 
   .description-title {
@@ -457,6 +395,7 @@
 
   .features {
     width: 360px;
+    border-top: 2px solid var(--basic-backgound-grey);
   }
 
   .img-logo {
@@ -488,38 +427,42 @@
 .features-list-description {
     font-size: 16px;
     line-height: 18px;
-    width: 135px;
+    width: 125px;
   }
 
   /* Clients */
 
-  .main-clients-list {
-   display: flex;
+  .main-clients {
    justify-content: space-between;
-   width: 1160px;
-   list-style: none;
    border-top: 2px solid var(--basic-backgound-grey);
    border-bottom: 2px solid var(--basic-backgound-grey);
+   margin: 0;
+   padding: 0;
+   padding-top: 46px;
+   padding-bottom: 44px;
   }
 
-  .main-clients-list li {
-    padding-top: 46px;
-    padding-bottom: 44px;
+  .main-clients-list {
+   display: flex;
+   list-style: none;
+   padding: 0;
+   
+  }
+
+  .clients-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 298px;
     position: relative;
   }
 
-  .main-clients-list a {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  .main-clients-list li:not(:first-child)::before {
+  .clients-list-item:not(:first-child)::before {
     content: "";
     position: absolute;
     width: 2px;
     height: 52px;
+    left: 0;
     background-color: var(--basic-backgound-grey);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -538,11 +481,9 @@
   overflow: hidden;
   }
 
-.clients-logo {
-    margin-left: 32px;
-    margin-right: 43px;
+  .clients-logo {
     opacity: 0.2;
-  }
+   }
 
   .clients-logo:hover {
     opacity: 1;
@@ -561,20 +502,20 @@
 .map iframe {
   border: 0;
   width: 100%;
-  margin-top: 80px;
 }
 
 .info {
+  position: relative;
   width: 319px;
   height: 308px;
   background-color: var(--basic-white);
-  position: absolute;
-  top: 120px;
+  top: 363px;
   left: 955px;
   text-align: center;
 }
 
 .info-content {
+  position: absolute;
   margin-top: 49px;
   }
 
