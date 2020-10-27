@@ -160,8 +160,9 @@
 
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
+      <div class="container map-container-info">
       <div class="info">
-        <div class="info-content">
+        
             <strong class="info-content-name">NERDS DESIGN STUDIO</strong>
             <address class="info-content-adress">
               191186, Санкт-Петербург,<br>   
@@ -169,8 +170,9 @@
             </address>
             <a class="info-content-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
             <a class="button info-content-link red--button" href="#">Напишите нам</a>
-          </div>
+         
           </div>  
+        </div>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300312!2d30.32085871610069!3d59.93871916905415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1603292362389!5m2!1sru!2sua" width="600" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <!-- <img class="img-map" src="img/group-12.png" width="1440" height="416" alt="Карта проезда"> -->
     </section>
@@ -206,6 +208,27 @@
 </div>
   </footer>
  </div>
+ <section class="modal-feedback">
+   <h2 class="form-feedback-title">Напишите нам</h2>
+ <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
+<div class="feedback-info">
+  <div class="feedback-info-name">
+    <label class="feedback-info-label" for="feedback-name">Ваше имя:</label>
+    <input class="feedback-info-input" type="text" name="name" id="feedback-name" placeholder="Имя Фамилия" required>
+  </div>
+  <div class="feedback-info-email">
+    <label class="feedback-info-label" for="feedback-email">Ваш e-mail:</label>
+    <input class="feedback-info-input" type="email" name="email" id="feedback-email" placeholder="email@example.com" required>
+  </div>
+</div>
+<div class="form-feedback-letter">
+  <label for="feedback-letter">Текст письма:</label>
+  <textarea name="letter" id="feedback-letter" placeholder="В свободной форме"></textarea>
+</div>
+<button class="button red--button form-feedback-button" type="submit">Отправить</button>
+<button class="form-feedback-closed" aria-label="Закрыть" type="button"></button>
+</form>
+</section>
 </body>
 
 </html>
