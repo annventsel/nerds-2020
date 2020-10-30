@@ -59,15 +59,15 @@
                         <ul>
                             <li class="filter-option filter-radio">
                                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
-                                <label for="filter-adaptive">Адаптивная</label>
+                                <label class="radio-label" for="filter-adaptive">Адаптивная</label>
                             </li>
                             <li class="filter-option filter-radio">
                                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="fixed" id="filter-fixed">
-                                <label for="filter-fixed">Фиксированная</label>
+                                <label class="radio-label" for="filter-fixed">Фиксированная</label>
                             </li>
                             <li class="filter-option filter-radio">
                                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="stretch" id="filter-stretch">
-                                <label for="filter-stretch">Резиновая</label>
+                                <label class="radio-label" for="filter-stretch">Резиновая</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -77,23 +77,23 @@
                         <ul>
                             <li class="filter-option filter-cheсkbox">
                                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider" checked>
-                                <label for="filter-slider">Слайдер</label>
+                                <label class="checkbox-label" for="filter-slider">Слайдер</label>
                             </li>
                             <li class="filter-option filter-cheсkbox">
                                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features-block" id="filter-features-block">
-                                <label for="filter-features-block">Блок преимуществ</label>
+                                <label class="checkbox-label" for="filter-features-block">Блок преимуществ</label>
                             </li>
                             <li class="filter-option filter-cheсkbox">
                                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
-                                <label for="filter-news">Новости</label>
+                                <label class="checkbox-label" for="filter-news">Новости</label>
                             </li>
                             <li class="filter-option filter-cheсkbox">
                                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery" id="filter-gallery">
-                                <label for="filter-gallery">Галерея</label>
+                                <label class="checkbox-label" for="filter-gallery">Галерея</label>
                             </li>
                             <li class="filter-option filter-cheсkbox">
                                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="cart" id="filter-cart">
-                                <label for="filter-cart">Корзина</label>
+                                <label class="checkbox-label" for="filter-cart">Корзина</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -103,32 +103,28 @@
     
             <section class="catalog">
                 <h2 class="visually-hidden">Список шаблонов</h2>
-                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                    <div class="sort">
-                        <p class="sort-caption">Сортировать:<p>
-                     <div class="catalog-sort-type">
-                        <ul>
-                            <li class="catalog-sort-list catalog-sort-list-active">
-                                <input class="visually-hidden sort-input-radio sort-input" type="radio" name="sort" value="price" id="sort-price" checked>
-                                <label class="sort-list-active" for="sort-price">По цене:</label>
-                            </li>
-                            <li class="catalog-sort-list">
-                                <input class="visually-hidden sort-input-radio sort-input" type="radio" name="sort" value="type" id="sort-type">
-                                <label for="sort-price">По типу:</label>
-                            </li>
-                            <li class="catalog-sort-list">
-                                <input class="visually-hidden sort-input-radio sort-input" type="radio" name="sort" value="name" id="sort-name">
-                                <label for="sort-price">По названию:</label>
-                            </li>
+                <div class="catalog-sort">
+                    <p class="sort-caption">Сортировать:</p>
+                    <div class="catalog-sort-type">
+                        <ul class="sort-type">
+                         <li class="catalog-sort-list">
+                             <a class="sort-type-link sort-type-link-active" href="#">По цене</a>
+                         </li>
+                         <li class="catalog-sort-list">
+                             <a class="sort-type-link" href="#">По типу</a>
+                         </li>
+                         <li class="catalog-sort-list">
+                            <a class="sort-type-link" href="#">По названию</a> 
+                         </li>
+                         <li class="pointers">
+                            <a class="pointer-down pointer-down-active" aria-label="Вниз"></a>
+                         </li>
+                         <li class="pointers">
+                            <a class="pointer-up" aria-label="Вверх"></a>
+                         </li>
                         </ul>
-                        <ul class="catalog-pointers">
-                            <li class="pointers">
-                                <a class="pointer-down pointer-down-active" aria-label="Вниз"></a>
-                            </li>
-                            <li class="pointers">
-                                <a class="pointer-up" aria-label="Вверх"></a>
-                            </li>
-                        </ul>
+                    </div>
+                </div>
                         <!-- <form class="filter" method="get" action="https://echo.htmlacademy.ru"> -->
                             <!-- <ul class="catalog-pointers">
                                 <li class="pointers">
@@ -145,9 +141,9 @@
                                 </li>
                             </ul> -->
                         <!-- </form> -->
-                     </div>
-                    </div>
-                </form>
+                     <!-- </div>
+                    </div> -->
+                <!-- </form> -->
                 <ul class="catalog-list">
                     <li class="catalog-item">
                         <!-- <a href="catalog.html"> -->
@@ -212,10 +208,10 @@
                     
                 </ul>
                 <ul class="pagination-list">
-                    <li class="pagination-item pagination-button-first "><a href="#">1</a></li>
-                    <li class="pagination-item"><a href="#">2</a></li>
-                    <li class="pagination-item"><a href="#">3</a></li>
-                    <li class="pagination-item"><a href="#">Следующая</a></li>
+                    <li class="pagination-item "><a class="pagination-button pagination-button-first" href="#">1</a></li>
+                    <li class="pagination-item"><a class="pagination-button" href="#">2</a></li>
+                    <li class="pagination-item"><a class="pagination-button" href="#">3</a></li>
+                    <li class="pagination-item"><a class="pagination-button pagination-button-last" href="#">Следующая</a></li>
                 </ul>
             </section>
 
