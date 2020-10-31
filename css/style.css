@@ -17,6 +17,7 @@
       --special-grey-toggle: #ababab;
       --special-grey-border: #dbdbdb;
       --special-grey-catalog: #f2f2f2;
+      --special-grey-ellipse: #c1c1c1;
       --special-red-hover: #e74246;
       --special-red-active: #d7373b;
       --special-green-hover: #00BC6C;
@@ -242,17 +243,30 @@
 
   .advantages {
     background-color: var(--basic-backgound-grey);
-    /*padding-left: 140px;*/
+    position: relative;
   }
+
+  .advantages-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
   .advantages-item {
     display: flex;
     flex-wrap: wrap;
   }
 
+  .slider-advantages-text {
+    /* width: 500px; */
+  }
+
   .advantages-title {
     font-size: 55px;
     line-height: 55px;
+    font-weight: 500;
     margin-bottom: 25px;
+    margin-top: 16px;
   }
 
   .advantages-text {
@@ -264,7 +278,6 @@
 
   .advantages-button {
     padding: 17px 54px 15px;
-    margin-top: 38px;
   }
 
   .advantages-button:hover {
@@ -277,11 +290,72 @@
     color: rgba(255,255,255,.3);
   } 
 
-  .advantages-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  .slide {
+    background-image: url(../img/nerds-index-slide1.png);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding-bottom: 80px;
+    padding-top: 60px;
   }
+
+  .slide2 {
+    background-image: url(../img/nerds-index-slide2.png);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding-bottom: 80px;
+    padding-top: 60px;
+    display: none;
+  }
+
+  .slide3 {
+    background-image: url(../img/nerds-index-slide3.png);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    display: none;
+  }
+
+  .slider-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 88px;
+    height: 18px;
+    position: absolute;
+    left: 1495px;
+    bottom: 96px;
+  }
+
+  .slider-switch-button {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--basic-white);
+    border: none;
+    cursor: pointer;
+  }
+
+  .slider-switch-on-button::before {
+    content: "";
+    box-sizing: border-box;
+    width: 8px;
+    height: 8px;
+    border: 2px solid var(--special-grey-ellipse);
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    transform: translate(10%, -10%);
+  }
+
+  .slider-switch-button:focus {
+    outline: none;
+  }
+
+
 
   /* Items grid */
 
@@ -483,7 +557,7 @@
 
 .map {
     position: relative;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .map iframe {
@@ -721,7 +795,7 @@
      content: "";
      position: absolute;
      left: -32px;
-     top: -4px;
+     top: -3px;
      background-image: url(../img/checkbox-off.svg);
      width: 23px;
      height: 23px;
@@ -836,14 +910,13 @@
      grid-template-columns: 1fr 1fr;
      margin: 0;
      padding: 0;
-     /* margin-top: 48px; */
      list-style: none;
      column-gap: 41px;
+     row-gap: 31px;
    }
 
    .catalog-item {
      position: relative;
-     margin-bottom: 31px;
      box-sizing: border-box;
      border: 1px solid rgba(0, 0, 0, 0.1);
      border-radius: 5px;
@@ -993,6 +1066,7 @@
       padding: 0;
       margin: 0;
       list-style: none;
+      margin-top: 55px;
     }
 
     .pagination-item {
@@ -1091,21 +1165,21 @@
       right: 0;
       bottom: 0;
       left: 0;
+      width: 960px;
+      height: 590px;
       visibility: hidden;
       margin: auto;
-      width: 760px;
       background-color: var(--basic-white);
-      padding: 65px 100px 85px;
       box-shadow: 0 20px 40px 0 rgba(0,1,1,.75);
     }
 
+    .modal-wrapper {
+      padding: 65px 100px 85px;
+    }
+
+
     .form-feedback {
-      visibility: hidden;
-      top: 10px;
-      bottom: auto;
-      right: -34px;
-      z-index: 2;
-      transform: translate(-50%, -50%);
+      /* visibility: hidden; */ 
     }
 
     .form-feedback-title {
@@ -1120,6 +1194,7 @@
     .feedback-info {
       display: flex;
       justify-content: space-between;
+      width: 760px;
       margin-bottom: 34px;
     }
 
@@ -1157,6 +1232,7 @@
       display: flex;
       justify-content: space-between;
       flex-direction: column;
+      width: 760px;
       margin-bottom: 47px;
     }
 
@@ -1183,8 +1259,8 @@
       top: 78px;
       right: 90px;
       padding: 0;
-      width: 25px;
-      height: 25px;
+      width: 21px;
+      height: 21px;
       border: 0;
       background: 0 0;
       opacity: 0.3;
@@ -1194,6 +1270,10 @@
     .form-feedback-closed::before {
       transform: rotate(45deg);
     } 
+
+    .form-feedback-closed::after {
+      transform: rotate(135deg);
+    } 
     
     .form-feedback-closed::before,
     .form-feedback-closed::after {
@@ -1201,8 +1281,8 @@
       position: absolute;
       top: 10px;
       right: 0;
-      width: 25px;
-      height: 5px;
+      width: 21px;
+      height: 4px;
       background-color: var(--basic-red);
     }
     
