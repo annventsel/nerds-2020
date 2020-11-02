@@ -999,6 +999,7 @@
      font-size: 14px;
      line-height: 18px;
      cursor: pointer;
+     margin-left: auto;
    }
 
    .catalog-sort-list {
@@ -1026,7 +1027,8 @@
    }
 
    .pointers {
-     padding-left: 18px;
+     /* padding-left: 18px; */
+     width: 23px;
      cursor: pointer;
    }
 
