@@ -263,6 +263,11 @@
     flex-wrap: wrap;
   }
 
+  .advantages-item-active {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .slider-advantages-text {
     /* width: 500px; */
   }
@@ -297,6 +302,10 @@
   } 
 
   .slide {
+    display: none;
+  }
+
+  .slide1 {
     background-image: url(../img/nerds-index-slide1.png);
     background-position: 100% 100%;
     background-repeat: no-repeat;
@@ -312,7 +321,6 @@
     box-sizing: border-box;
     padding-bottom: 80px;
     padding-top: 60px;
-    display: none;
   }
 
   .slide3 {
@@ -322,7 +330,6 @@
     box-sizing: border-box;
     padding-top: 60px;
     padding-bottom: 80px;
-    display: none;
   }
 
   .slider-buttons-wrapper {
@@ -358,8 +365,8 @@
     border: 2px solid var(--special-grey-ellipse);
     border-radius: 50%;
     position: absolute;
-    left: 5px;
-    top: 5px;
+    left: 4px;
+    top: 6px;
     transform: translate(10%, -10%);
   }
 
@@ -381,10 +388,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
     column-gap: 40px;
-  }
-
-  .items-list {
-    list-style-type: none;
+    list-style: none;
+    margin: 0;
   }
 
   .items-web {
@@ -424,7 +429,7 @@
     line-height: 45px;
     width: 651px;
     min-height: 91px;
-    margin-top: 58px;
+    margin-top: 74px;
     margin-bottom: 33px;
   } 
 
@@ -471,7 +476,7 @@
   }
 
   .description ul {
-    margin-bottom: 73px;
+    margin-bottom: 60px;
   }
 
   .features {
@@ -479,7 +484,7 @@
   }
 
   .img-logo {
-    margin-top: 25px;
+    margin-top: 40px;
     padding-left: 26px;
   }
 
@@ -527,7 +532,7 @@
    border-bottom: 2px solid var(--basic-backgound-grey);
    margin: 0;
    padding: 0;
-   padding-top: 20px;
+   padding-top: 34px;
    padding-bottom: 44px;
   }
 
@@ -535,7 +540,7 @@
    display: flex;
    list-style: none;
    padding: 0;
-   
+   margin-bottom: -10px;
   }
 
   .clients-list-item {
@@ -555,7 +560,8 @@
     position: absolute;
     width: 2px;
     height: 52px;
-    left: 0;
+    left: -19px;
+    top: 14px;
     background-color: var(--basic-backgound-grey);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -590,7 +596,7 @@
 
 .map {
     position: relative;
-    margin-top: 60px;
+    margin-top: 78px;
 }
 
 .map iframe {
@@ -606,7 +612,7 @@
   position: absolute;
   width: 319px;
   background-color: var(--basic-white);
-  top: 46px;
+  top: 55px;
   left: 20px;
   box-sizing: border-box;
   padding: 50px 50px 47px 50px;
@@ -657,7 +663,7 @@
     justify-content: flex-start;
     width: 300px;
     list-style: none;
-    padding: 38px 100px 68px 0;
+    padding: 44px 100px 68px 0;
 
   }
 .social-button {
@@ -709,7 +715,7 @@
   }
 
   .social-text {
-    margin-top: -13px;
+    margin-top: -4px;
     
   }
 
@@ -725,9 +731,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 164px;
+    padding-bottom: 108px;
     padding-top: 70px;
     margin: 0px;
+    margin-bottom: 57px;
   }
 
   /* Filter Button */ 
@@ -938,8 +945,6 @@
      padding: 2px;
    }
 
-  
-
    .max-price {
      text-align: right;
    }
@@ -1115,7 +1120,7 @@
       margin: 0;
       list-style: none;
       margin-top: 54px;
-      margin-bottom: 7px;
+      margin-bottom: -20px;
     }
 
     .pagination-item {
@@ -1159,9 +1164,8 @@
 
     /* Description Blocks */
 
-
     .description1 {
-      /* display: none; */
+      display: none;
       position: absolute;
       width: 360px;
       height: 206px;
