@@ -261,15 +261,32 @@
   .advantages-item {
     display: flex;
     flex-wrap: wrap;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .slide {
+    display: none;
+  }
+
+  .slide1 {
+    background-image: url(../img/nerds-index-slide1.png);
+  }
+
+  .slide2 {
+    background-image: url(../img/nerds-index-slide2.png);
+  }
+
+  .slide3 {
+    background-image: url(../img/nerds-index-slide3.png);
   }
 
   .advantages-item-active {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .slider-advantages-text {
-    /* width: 500px; */
   }
 
   .advantages-title {
@@ -300,37 +317,6 @@
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
     color: rgba(255,255,255,.3);
   } 
-
-  .slide {
-    display: none;
-  }
-
-  .slide1 {
-    background-image: url(../img/nerds-index-slide1.png);
-    background-position: 100% 100%;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-    padding-bottom: 80px;
-    padding-top: 60px;
-  }
-
-  .slide2 {
-    background-image: url(../img/nerds-index-slide2.png);
-    background-position: 100% 100%;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-    padding-bottom: 80px;
-    padding-top: 60px;
-  }
-
-  .slide3 {
-    background-image: url(../img/nerds-index-slide3.png);
-    background-position: 100% 100%;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-    padding-top: 60px;
-    padding-bottom: 80px;
-  }
 
   .slider-buttons-wrapper {
     position: relative;
