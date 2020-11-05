@@ -317,8 +317,7 @@
   .advantages-button:active {
     background-color: var(--special-red-active);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-    color: var(--basic-white);
-    opacity: 0.3;
+    color: rgba(255,255,255,.3);
   } 
 
   .slider-buttons-wrapper {
@@ -748,10 +747,6 @@
     border: none;
   }
 
-  .filter-button:focus {
-    outline: none;
-  }
-
    /* Filters */
 
    .filters {
@@ -865,6 +860,16 @@
     opacity: 0.1;
     cursor: not-allowed;
    }
+
+  .filter-input-checkbox:focus + label::before {
+    color: var(--special-grey-filter); 
+    opacity: 1;
+   }
+   
+   .filter-input-radio:focus + label::before {
+    color: var(--special-grey-filter); 
+    opacity: 1;
+  } 
 
    .range-filter {
      width: 260px;
@@ -1159,12 +1164,11 @@
     .description1 {
       display: none;
       position: absolute;
-      width: 360px;
-      /* height: 206px; */
       background-color: var(--basic-backgound-grey);
       text-align: center;
       bottom: 0;
-      padding-top: 26px;
+      /* padding-top: 26px; */
+      padding: 43px 60px 42px;
     }
 
     .description-heading {
@@ -1174,6 +1178,8 @@
       text-align: center;
       text-transform: uppercase;
       color: var(--basic-black);
+      /* margin-top: 16px;
+      margin-bottom: 16px; */
     }
 
     .description-heading:hover {
@@ -1186,20 +1192,21 @@
     }
 
     .description1 p {
-      padding-left: 44px;
-      padding-right: 52px;
+      /* padding-left: 44px;
+      padding-right: 52px; */
       text-align: center;
       color: var(--basic-light-grey);
-      padding-bottom: 33px;
-      padding-top: 12px;
+      padding-bottom: 21px;
       line-height: 18px;
-      margin: 0;
+      /* margin: 0; */
+      /* /* overflow: hidden; */
+      max-height: 380px; */
     }
 
     .catalog-button {
       padding: 17px 0 15px;
-      /* margin-bottom: 40px;
-      margin-top: 16px; */
+      /* margin-bottom: 40px;*/
+      /* margin-top: 18px;  */
       width: 200px;
     }
 
